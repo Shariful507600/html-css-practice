@@ -1,0 +1,18 @@
+.flex-container {
+  display: flex;
+  height: 600px;
+  border: 2px solid black;
+
+  flex-direction: row;          /* row | row-reverse | column | column-reverse */
+  flex-wrap: wrap;              /* nowrap | wrap | wrap-reverse */
+  /* flex-flow: column wrap; */ /* direction + wrap একসাথে */
+  justify-content: center;      /* center | flex-start | flex-end | space-around | space-between */
+  align-items: flex-start;      /* center | flex-start | flex-end | stretch | baseline */
+  align-content: space-between; /* space-between | space-around | stretch | center | flex-end */
+}
+.flex-container div {
+  width: 120px;
+  height: 60px;
+  border: 1px solid blue;
+  margin: 5px;
+}

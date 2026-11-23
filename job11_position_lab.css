@@ -1,0 +1,9 @@
+div { border: 3px solid #73AD21; margin: 10px; }
+
+div.static   { position: static; }
+div.relative { position: relative; left: 30px; width: 400px; height: 200px; }
+div.absolute { position: absolute; top: 80px; right: 0; width: 200px; height: 100px; }
+div.fixed    { position: fixed; bottom: 0; right: 0; width: 300px; background: white; }
+div.sticky   { position: -webkit-sticky; position: sticky; top: 0;
+               padding: 5px; background-color: #cae8ca; }
+img { position: absolute; left: 0; top: 0; z-index: -1; }

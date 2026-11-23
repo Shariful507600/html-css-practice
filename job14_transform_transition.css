@@ -1,0 +1,18 @@
+.c { width: 100px; height: 100px; background: red; color: white;
+display: inline-block; margin: 40px; }
+
+.t1  { transform: translate(50px, 150px); }
+.t2  { transform: rotate(25deg); }
+.t3  { transform: scale(3, 4); }
+.t4  { transform: scale(0.5, 0.5); }
+.t5  { transform: skewX(25deg); }
+.t6  { transform: skewY(25deg); }
+.t7  { transform: skew(25deg, 15deg); }
+.t8  { transform: matrix(1, -0.3, 0, 1, 0, 0); }
+.t9  { transform: rotateX(120deg); }
+.t10 { transform: rotateY(12deg); }
+.t11 { transform: rotateZ(90deg); }
+
+/* Transition */
+.tr { transition: all 2s; }
+.tr:hover { width: 300px; }

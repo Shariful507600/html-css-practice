@@ -1,0 +1,79 @@
+/* ===== Layout ===== */
+body { margin: 0; font-family: sans-serif; }
+
+header {
+  background: linear-gradient(to left, red, yellow);
+  color: white;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* ===== Sticky navbar + Flexbox ===== */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  z-index: 10;
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: all 2s;
+}
+nav a:hover { background-color: tomato; }
+
+/* ===== Main area (Flexbox) ===== */
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+section { width: 70%; }
+
+article {
+  border: 2px solid #73AD21;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 10px 10px 5px green;
+}
+
+aside {
+  width: 25%;
+  background-color: rgba(255, 99, 71, 0.5);
+  padding: 10px;
+}
+
+/* ===== Transition + Transform ===== */
+img { transition: all 2s; }
+img:hover { transform: rotate(25deg) scale(1.2); }
+
+/* ===== Animation ===== */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+@keyframes example {
+  from { background-color: red; }
+  to   { background-color: yellow; }
+}
+
+/* ===== Fixed footer ===== */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #333;
+  color: white;
+  padding: 5px 15px;
+}

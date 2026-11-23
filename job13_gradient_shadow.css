@@ -1,0 +1,8 @@
+.b { height: 100px; margin: 10px; color: white; font-size: 28px; }
+.linear { background: linear-gradient(to left, red, yellow); }
+.radial { background: radial-gradient(red, yellow, green); }
+.conic  { background: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+          border-radius: 50%; width: 100px; }
+h1 { text-shadow: 5px 5px 5px red; }
+div.card { width: 200px; height: 100px; background: white;
+           box-shadow: 10px 10px 5px green; margin: 20px; }

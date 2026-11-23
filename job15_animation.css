@@ -1,0 +1,45 @@
+/* ১. রঙ বদলের অ্যানিমেশন (বইয়ের উদাহরণ) */
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+@keyframes example {
+  from { background-color: red; }
+  to   { background-color: yellow; }
+}
+
+/* ২. সরে যাওয়া + বারবার চলা + উল্টো দিকে ফেরা */
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-top: 20px;
+  position: relative;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes move {
+  from { left: 0px; }
+  to   { left: 300px; }
+}
+
+/* ৩. এক লাইনে shorthand */
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin-top: 20px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
